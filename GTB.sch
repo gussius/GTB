@@ -1,0 +1,224 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CircuitHub
+LIBS:GTB
+LIBS:GTB-cache
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Getting to Blinky"
+Date "28 jan 2014"
+Rev "A"
+Comp "Contextual Electronics"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L C C1
+U 1 1 52E0D101
+P 4850 5500
+F 0 "C1" H 4850 5600 40  0000 L CNN
+F 1 "1uF" H 4856 5415 40  0000 L CNN
+F 2 "SM1206" H 4950 5350 30  0000 C CNN
+F 3 "~" H 4850 5500 60  0000 C CNN
+	1    4850 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 52E0D1E3
+P 4850 4550
+F 0 "R1" V 4930 4550 40  0000 C CNN
+F 1 "470K" V 4857 4551 40  0000 C CNN
+F 2 "SM1206" V 4780 4550 30  0000 C CNN
+F 3 "~" H 4850 4550 30  0000 C CNN
+	1    4850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VR LDR1
+U 1 1 52E0D202
+P 4850 3650
+F 0 "LDR1" V 4950 3650 40  0000 C TNN
+F 1 "1K" V 4850 3650 40  0000 C CNN
+F 2 "" H 4850 3650 60  0000 C CNN
+F 3 "~" H 4850 3650 60  0000 C CNN
+	1    4850 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 52E0D20F
+P 7350 4750
+F 0 "R2" V 7430 4750 40  0000 C CNN
+F 1 "1K" V 7357 4751 40  0000 C CNN
+F 2 "SM1206" V 7280 4750 30  0000 C CNN
+F 3 "~" H 7350 4750 30  0000 C CNN
+	1    7350 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 52E0D26C
+P 7350 5400
+F 0 "D1" H 7350 5500 50  0000 C CNN
+F 1 "LED" H 7350 5300 50  0000 C CNN
+F 2 "LED-1206" H 7350 5600 60  0000 C CNN
+F 3 "~" H 7350 5400 60  0000 C CNN
+	1    7350 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 52E0D2EF
+P 4850 2550
+F 0 "#PWR01" H 4850 2650 30  0001 C CNN
+F 1 "VCC" H 4850 2650 30  0000 C CNN
+F 2 "" H 4850 2550 60  0000 C CNN
+F 3 "" H 4850 2550 60  0000 C CNN
+	1    4850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3900 4850 4300
+Wire Wire Line
+	5300 3950 4850 3950
+Connection ~ 4850 3950
+Wire Wire Line
+	5300 4300 5200 4300
+Wire Wire Line
+	5200 4300 5200 5050
+Wire Wire Line
+	5200 4550 5300 4550
+Wire Wire Line
+	5200 5050 4850 5050
+Wire Wire Line
+	4850 4800 4850 5300
+Connection ~ 4850 5050
+Wire Wire Line
+	6050 5000 6050 5850
+Wire Wire Line
+	4850 5850 7350 5850
+Wire Wire Line
+	4850 5700 4850 6250
+Wire Wire Line
+	7000 4250 7350 4250
+Wire Wire Line
+	7350 4250 7350 4500
+Wire Wire Line
+	7350 5000 7350 5200
+Wire Wire Line
+	7350 5850 7350 5600
+Connection ~ 6050 5850
+Wire Wire Line
+	6450 2850 6450 3400
+Wire Wire Line
+	4850 2550 4850 3400
+Wire Wire Line
+	6050 3400 6050 3300
+Wire Wire Line
+	6050 3300 6450 3300
+Connection ~ 6450 3300
+Connection ~ 4850 2850
+$Comp
+L GND #PWR02
+U 1 1 52E0D360
+P 4850 6250
+F 0 "#PWR02" H 4850 6250 30  0001 C CNN
+F 1 "GND" H 4850 6180 30  0001 C CNN
+F 2 "" H 4850 6250 60  0000 C CNN
+F 3 "" H 4850 6250 60  0000 C CNN
+	1    4850 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2850 4850 2850
+Connection ~ 4850 5850
+$Comp
+L BATTERY BAT1
+U 1 1 52E0D3EE
+P 3400 4350
+F 0 "BAT1" H 3400 4550 50  0000 C CNN
+F 1 "CR2032" H 3400 4160 50  0000 C CNN
+F 2 "CR2032H" H 3400 4650 60  0000 C CNN
+F 3 "~" H 3400 4350 60  0000 C CNN
+	1    3400 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 52E0D3FD
+P 3400 3800
+F 0 "#PWR03" H 3400 3900 30  0001 C CNN
+F 1 "VCC" H 3400 3900 30  0000 C CNN
+F 2 "" H 3400 3800 60  0000 C CNN
+F 3 "" H 3400 3800 60  0000 C CNN
+	1    3400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 52E0D40C
+P 3400 4900
+F 0 "#PWR04" H 3400 4900 30  0001 C CNN
+F 1 "GND" H 3400 4830 30  0001 C CNN
+F 2 "" H 3400 4900 60  0000 C CNN
+F 3 "" H 3400 4900 60  0000 C CNN
+	1    3400 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3800 3400 4050
+Wire Wire Line
+	3400 4650 3400 4900
+NoConn ~ 6450 5050
+$Comp
+L 7555-S08N U1
+U 1 1 52E0E373
+P 6250 4300
+F 0 "U1" H 6700 3750 60  0000 C CNN
+F 1 "7555-S08N" H 6150 4350 60  0000 C CNN
+F 2 "S08N" H 5650 3750 60  0001 C CNN
+F 3 "~" H 6150 4250 60  0000 C CNN
+	1    6250 4300
+	1    0    0    -1  
+$EndComp
+Text Label 5200 4950 0    60   ~ 0
+Trigger
+Text Label 4950 3950 0    60   ~ 0
+Discharge
+Connection ~ 5200 4550
+$EndSCHEMATC

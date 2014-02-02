@@ -1,0 +1,8 @@
+ref,value,footprint,Field1,Field2,Field3,Field4
+BAT1,BATTERY,CR2032H,,,,
+C1,1uF,SM1206,,,,
+D1,LED,LED-1206,,,,
+LDR1,1K,,,,,
+R1,470K,SM1206,,,,
+R2,1K,SM1206,,,,
+U1,7555,SO8N,,,,
