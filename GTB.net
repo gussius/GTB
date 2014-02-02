@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source "C:/Contextual Electronics/Kicad/Getting To Blinky/GTB.sch")
-    (date "28/01/2014 9:20:00 p.m.")
+    (source C:/Users/angmcl/Documents/GitHub/GTB/GTB.sch)
+    (date "2/02/2014 9:06:13 p.m.")
     (tool "eeschema (2013-07-07 BZR 4022)-stable"))
   (components
     (comp (ref C1)

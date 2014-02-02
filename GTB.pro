@@ -1,4 +1,4 @@
-update=28/01/2014 11:32:07 p.m.
+update=2/02/2014 9:53:41 p.m.
 version=1
 last_client=pcbnew
 [cvpcb]
@@ -53,10 +53,10 @@ LibName32=GTB
 version=1
 LastNetListRead=GTB.net
 UseCmpFile=1
-PadDrill=0.400000000000
-PadDrillOvalY=0.400000000000
-PadSizeH=1.300000000000
-PadSizeV=1.300000000000
+PadDrill=1.854200000000
+PadDrillOvalY=1.854200000000
+PadSizeH=3.048000000000
+PadSizeV=3.048000000000
 PcbTextSizeV=1.500000000000
 PcbTextSizeH=1.500000000000
 PcbTextThickness=0.300000000000
@@ -69,7 +69,7 @@ DrawSegmentWidth=0.200000000000
 BoardOutlineThickness=0.100000000000
 ModuleOutlineThickness=0.150000000000
 [pcbnew/libraries]
-LibDir=../Getting To Blinky
+LibDir=C:/Users/angmcl/Documents/GitHub/GTB
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -88,4 +88,4 @@ LibName15=pga_sockets
 LibName16=valves
 LibName17=GTB
 LibName18=GTB_Script
-LibName19=GTB_Script2
+LibName19=ScriptScript3
